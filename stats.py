@@ -16,3 +16,8 @@ def get_num_letters(book_text):
             char_count[char] = 1
     
     return char_count
+
+
+def sort_characters(items):
+    sorted_items = sorted(items.items(),key=lambda x:x[1],reverse= True)
+    return sorted_items
